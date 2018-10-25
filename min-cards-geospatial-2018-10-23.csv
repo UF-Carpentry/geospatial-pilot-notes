@@ -1,0 +1,56 @@
+type,response
+Positive,"I loved the dplyr workshop, it was very helpful"
+Positive,"Time management, breaks, challenges, food"
+Positive,"I really enjoyed the visuals and examples, the pace was easy to follow"
+Positive,"I like that there was a refresher R at the start (Day 2), the instructor's speed was good"
+Positive,"the challenges were helpful, slow pace of some instructors, instructors very helpful"
+Positive,Good introduction to grid(?) and raster
+Positive,multiple ways to do one certain job is interesting to know
+Positive,All the teachers explained everything very well
+Positive,Always good workshop
+Positive,"Intro to basics of R was good, I am very new to R"
+Positive,"Applicable content, good pace"
+Positive,"All the instructors are really nice, good time to review R, thank you!"
+Positive,So far enjoying the workshop!
+Positive,All the instructors are very knowledgeable and it was easy to follow their lectures
+Positive,Really helpful
+Positive,"Really enjoyed the dplyr section, this will be very helpful for me in my work"
+Positive,Great workshop!
+Positive,I learned a lot about geospatial thins I never knew!
+Positive,"I loved making raster maps today, and learning to combine data types"
+Positive,"instructors were great, length of workshop was perfect, lots of helpers especially given the number of students, content was great"
+Positive,Great workshop! Thanks for the great help!!
+Positive,All lessons were awesome today
+Positive,Excellent job
+Positive,"It was really helpful for me, thank you"
+Positive,"Easy to follow instructions, basic concepts well explained, really nice environment, very friendly, thanks!"
+Positive,"Instructors do a great job for introductory course, it is good to have online resources to go at our own speed"
+Positive,"Really, today was great. Every part of today was interesting. y'all know when to make breaks, you're so helpful. It was great"
+Positive,Well done!
+Positive,Everything! Everyone is incredibly helpful
+Positive,It was hard to find some of he online lectures because they don't follow a general index
+Positive,Really good
+Improvement,"Less of an intro to R, a little slower on the geospatial"
+Improvement,Please allow us to have the original script
+Improvement,probably less R intro is needed to allow finishing all activities
+Improvement,"Some sections too repetitive, especially if very familiar with ggplot. Would be good to specify audience for workshop, for someone that works with R a lot and ggplot, dplyr, etc... it might be a bit slow. But this is easily addressed by having a set schedule/contents online"
+Improvement,"Don't cover Intro to R, should be part of other workshop"
+Improvement,"Maybe give an overview of where to get shape and raster files (general resources), explain better the structure of shape & raster files"
+Improvement,"I think the Day 1 topics should be covered by each student separately (like sending the code and classes ahead) and dedicate 2 days on just working with geospatial data. Maybe having 2 hours to check our data, or have additional examples, reading external files. Maybe important to comment a little bit more the coding because we will like to remember sometimes in a quick way what the lines are doing."
+Improvement,I was expecting more info in spatial analysis and maybe in the future people can go over the basics of R online and focus this workshop on spatial data only (the whole 2 days)
+Improvement,"Maybe less intro to R, make it strictly geospatial data"
+Improvement,A bit fast today (day 2)
+Improvement,"slow start, fast finish"
+Improvement,"I already had plenty of experience in R, it would be better to more focus on geospatial analysis for the people who are familiar with R, but thank you!"
+Improvement,"Some points were a little too slow, but they were important to people that are not familiar with R"
+Improvement,"I'd split the workshop into people who experience in R and don't, it was a lot of review"
+Improvement,"R intro too long (I would have skipped), a ppt or more organized presentation would have been useful for the geospatial concepts intro for those new to geography"
+Improvement,"Possibly too much background R, however this workshop is for beginners"
+Improvement,"More data, more plot types"
+Improvement,Fast pace of some instructors
+Improvement,"The morning session of basic set-up is a little bit too long, which makes the rest of the workshop a little bit in a rush"
+Improvement,"Less R intro, more time for geospatial, and slower"
+Improvement,"Maybe do not cover R intro in this workshop, have pre-req to ask folks to get into this workshop they already have intro R"
+Improvement,"Got faster or cut the intro a little bit, schedule people that know the R intro to arrive after"
+Improvement,"Maybe an icebreaker at the beginning to know each background or names, the classes were in the Data Carpentry website so maybe saying this at the beginning to also follow a little bit the graphs and codes"
+Improvement,Introduction to dplyr & ggplot could have been better with interesting challenging examples
