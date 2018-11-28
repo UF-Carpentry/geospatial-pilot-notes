@@ -1,15 +1,18 @@
-Geospatial Pilot Notes
-================
+---
+title: "Geospatial Pilot Notes"
+output: github_document
+---
 
-Day One
--------
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, fig.align = 'center')
+```
 
+
+## Day One
 ### Setup
-
 kyngchaos only works for MacOS Sierra. Homebrew also seemed to not work for older MacOS. This is worth exploring more, and perhaps a minimum OS should be added to the setup.
 
 ### Intro to R lesson
-
 Intro to R section had some redundancies and took longer than expected to get through. We ended up only briefly going through section 4, since most of this was covered in section 3, and then skipped section 5 (subsetting) and jump straight into dplyr lesson ofr subsetting.
 
 ggsave is not in the `Writing Data` section, should be added.
@@ -20,8 +23,7 @@ Overall this section took too much time, it probably needs to be completely by t
 
 We found that using a slideshow presentation for the Concepts lesson was more helpful that just using the lesson notes or using screen captures. It would be helpful if we put together a Google Presentation that would be accessible across DC, that way we don't have instructors re-making essential the same slideshow over and over again.
 
-Day Two
--------
+## Day Two
 
 ### Raster and vector data in R
 
@@ -41,14 +43,54 @@ We may want to add a note that about functions getting masked by different packa
 
 Did not do lesson 12 - 14
 
-Reviews
--------
+## Reviews
 
 ### Minute cards
 
 By far, the most common criticism was that too much time was spent on introductory R material. Several learners suggest that we ask participants to review the `Intro to R` section on their own prior to workshop, and then dedicate the full two days to just working with geospatial data.
 
-Internal survey results ([Data](https://docs.google.com/spreadsheets/d/1VnG3S7yDM5q2AnAPEyqO7cR5cHhY1i2BW9GBT3-pS2k/edit?usp=sharing))
---------------------------------------------------------------------------------------------------------------------------------------
+## Internal survey results ([Data](https://docs.google.com/spreadsheets/d/1VnG3S7yDM5q2AnAPEyqO7cR5cHhY1i2BW9GBT3-pS2k/edit?usp=sharing))
 
-<img src="README_files/figure-markdown_github/plots-1.png" style="display: block; margin: auto;" /><img src="README_files/figure-markdown_github/plots-2.png" style="display: block; margin: auto;" /><img src="README_files/figure-markdown_github/plots-3.png" style="display: block; margin: auto;" /><img src="README_files/figure-markdown_github/plots-4.png" style="display: block; margin: auto;" />
+```{r gs, echo=FALSE, message=FALSE, warning=FALSE}
+library(googlesheets)
+library(tidyverse)
+
+ggthemr::ggthemr("flat")
+
+# First add sheet to your Googlesheet with "Data" link above
+survey <- gs_title("Geospatial Workshop Survey (Responses)") %>% 
+  gs_read() %>% 
+  janitor::clean_names()
+
+```
+
+```{r plots}
+
+p <- ggplot(survey) 
+
+p +
+  geom_bar(aes(how_much_experience_with_r_did_you_have_prior_to_this_workshop)) +
+  labs(title = "Prior experience with R before this workshop?", 
+       subtitle = "(1) Very little  or no experience -- (5) Highly experienced",
+       caption = paste("Number of responses:", nrow(survey)),x = "", y = "")
+
+p +
+  geom_bar(aes(based_on_your_level_of_experience_would_you_recommend_we_keep_the_introduction_to_r_section_for_future_workshops)) +
+  labs(title = 'Keep "Intro. to R" section in future workshops?', 
+       subtitle = "",
+       caption = paste("Number of responses:", nrow(survey)),x = "", y = "")
+
+p +
+  geom_bar(aes(how_much_experience_with_geospatial_data_did_you_have_prior_to_this_workshop)) +
+  labs(title = "Prior experience with geospatial data before this workshop?", 
+       subtitle = "(1) Very little  or no experience -- (5) Highly experienced",
+       caption = paste("Number of responses:", nrow(survey)),x = "", y = "")
+
+p +
+  geom_bar(aes(based_on_your_level_of_experience_would_you_recommend_we_keep_the_introduction_to_geospatial_data_section_for_future_workshops)) +
+  labs(title = 'Keep "Intro. to Geospatial Data" section in future workshops?', 
+       subtitle = "",
+       caption = paste("Number of responses:", nrow(survey)),x = "", y = "")
+
+```
+
